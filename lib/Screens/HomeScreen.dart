@@ -31,6 +31,9 @@ class _HomeScreenState extends State<HomeScreen> {
                 subtitle: Text("Date : 2 Jan. 2021"),
                 leading: Icon(Icons.timer),
               ),
+
+              Divider( thickness: 2,),
+
               ListTile(
                 title: Text("Next Payment"),
                 subtitle: Text("Date : 2 Feb. 2021"),
@@ -147,10 +150,10 @@ class _HomeScreenState extends State<HomeScreen> {
               RaisedButton(
                 color: Colors.amber,
                 onPressed: () {},
-                child: Text("Register for monthly plan"),
+                child: Text("Pay for chosen monthly plan"),
               ),
               Container(
-                height: screenHeight * 0.02,
+                height: screenHeight * 0.04,
                 child: Divider(
                   thickness: 2,
                 ),

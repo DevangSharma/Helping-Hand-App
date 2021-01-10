@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'profile.dart';
 
 class DrawerList extends StatelessWidget {
   @override
@@ -15,13 +16,17 @@ class DrawerList extends StatelessWidget {
           padding: const EdgeInsets.all(0.0),
           children: [
             UserAccountsDrawerHeader(
+              onDetailsPressed: () {
+                Navigator.of(context).push(
+                
+    MaterialPageRoute(builder: (context) => ProfilePage()),
+                );
+              },
               accountName: Text("Devang Sharma"),
               accountEmail: Text("debusharma1999@gmail.com"),
               currentAccountPicture: CircleAvatar(
                 backgroundColor:
-                    Theme.of(context).platform == TargetPlatform.iOS
-                        ? Colors.blue
-                        : Colors.white,
+                     Colors.white,
                 child: Text(
                   "DS",
                   style: TextStyle(fontSize: 40.0),
