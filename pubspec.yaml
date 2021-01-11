@@ -39,6 +39,12 @@ dev_dependencies:
 
   flutter_native_splash:
 
+  screenshot:
+
+  share:
+
+  esys_flutter_share:
+
 flutter_native_splash:
   image: assets/images/splash.png
   color: "ffffff"
@@ -63,6 +69,9 @@ flutter:
   assets:
     - assets/images/logo.png
     - assets/images/splash.png
+    - assets/images/dev.jpg
+
+
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
